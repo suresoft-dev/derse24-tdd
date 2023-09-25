@@ -23,6 +23,10 @@ pre {
     background-color: transparent;
 }
 
+.reveal code {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.85);
+}
+
 .hljs {
     padding: 2rem !important;
     border-radius: 4px;
