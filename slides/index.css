@@ -44,3 +44,12 @@ pre {
     width: 128px;
     aspect-ratio: 1 / 1;
 }
+
+.nfdi4ing-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    width: 128px;
+    aspect-ratio: 1 / 1;
+}
