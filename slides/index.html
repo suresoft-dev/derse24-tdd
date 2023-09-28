@@ -338,7 +338,7 @@
                             def load_config(parser: ConfigParser, config_path: str) -> list[str]:
                                 """
                                 Loads configuration from a config file.
-                                Falls back to the 'defaults' file on file.
+                                Falls back to the 'defaults' file on fail.
                                 """
                                 config = parser.read(config_path)
                                 if not config:
@@ -354,7 +354,7 @@
                             def load_config(parser: ConfigParser, config_path: str) -> list[str]:
                                 """
                                 Loads configuration from a config file.
-                                Falls back to the <b><em>'defaults'</em></b> file on file.
+                                Falls back to the <b><em>'defaults'</em></b> file on fail.
                                 """
                                 config = parser.read(config_path)
                                 if not config:
