@@ -15,15 +15,17 @@
 }
 
 .textbox {
-    background-color:rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.85);
 }
 
 pre {
-    background-color: transparent;
+    border-radius: 4px;
 }
 
-.reveal code {
+code {
+    background-color: transparent;
+    padding: 2rem !important;
     box-shadow: 1px 2px 2px 0px rgb(0, 0, 0, 0.3);
 }
 
@@ -40,15 +42,6 @@ pre {
     position: absolute;
     top: 1rem;
     left: 1rem;
-
-    width: 128px;
-    aspect-ratio: 1 / 1;
-}
-
-.nfdi4ing-icon {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
 
     width: 128px;
     aspect-ratio: 1 / 1;

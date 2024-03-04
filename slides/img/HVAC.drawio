@@ -1,0 +1,47 @@
+<mxfile host="Electron" modified="2024-03-04T13:42:17.939Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/23.1.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="fG7Yz3OKziNP28UEqQJb" version="23.1.5" type="device">
+  <diagram name="Page-1" id="7u4l6aUnjVpdsHGGlt_i">
+    <mxGraphModel dx="1985" dy="722" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HkDzidcI0pS3HBkxRl_O-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;HVAC&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ temperature(): float&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ start_blowing()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ start_cooling()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ start_heating()&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ stop_blowing()&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ stop_cooling()&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ stop_heating()&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="40" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="HkDzidcI0pS3HBkxRl_O-7" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=block;endFill=0;" edge="1" parent="1" source="HkDzidcI0pS3HBkxRl_O-6" target="HkDzidcI0pS3HBkxRl_O-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HkDzidcI0pS3HBkxRl_O-6" value="HVACTestDouble" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="240" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="HkDzidcI0pS3HBkxRl_O-8" value="HVACController" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-460" y="40" width="220" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="HkDzidcI0pS3HBkxRl_O-9" value="+ desired_temperature: float&lt;br&gt;+ allowed_delta: float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="HkDzidcI0pS3HBkxRl_O-8">
+          <mxGeometry y="26" width="220" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="HkDzidcI0pS3HBkxRl_O-10" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="HkDzidcI0pS3HBkxRl_O-8">
+          <mxGeometry y="70" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="HkDzidcI0pS3HBkxRl_O-11" value="+ check_temperature()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="HkDzidcI0pS3HBkxRl_O-8">
+          <mxGeometry y="78" width="220" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="HkDzidcI0pS3HBkxRl_O-14" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;entryX=0;entryY=0.3;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="HkDzidcI0pS3HBkxRl_O-9" target="HkDzidcI0pS3HBkxRl_O-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-280" y="88" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HkDzidcI0pS3HBkxRl_O-16" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;dashed=1;dashPattern=8 8;" edge="1" parent="1" source="HkDzidcI0pS3HBkxRl_O-15" target="HkDzidcI0pS3HBkxRl_O-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HkDzidcI0pS3HBkxRl_O-17" value="calls check_temperature&lt;br&gt;every minute" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="HkDzidcI0pS3HBkxRl_O-16">
+          <mxGeometry x="-0.1369" y="1" relative="1" as="geometry">
+            <mxPoint x="11" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HkDzidcI0pS3HBkxRl_O-15" value="Operating System" style="html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-460" y="240" width="220" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
