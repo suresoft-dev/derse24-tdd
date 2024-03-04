@@ -73,7 +73,7 @@ def test__list_with_element__pop_element__list_is_empty() -> None:
     sut.pop()
 
     # Assert
-    assert len(sut) == 1
+    assert len(sut) == 0
 ```
 
 ---
