@@ -4,7 +4,28 @@
 - fast feedback when writing code
 - tests serve as a safety net, <br/>
   change code without fear of breaking anything!
+
+---
+
+<img style="border-radius: 5px; scale: 1.25" src="img/TestFeedback.png">
+
+---
+
+<slide-header>Why test your code?</slide-header>
+
 - tests are a form of low level documentation
+
+---
+
+```python
+def test__money_converted_to_same_currency__returns_same_money() -> None:
+    money = Money(100, Currency.EUR)
+
+    exchange = lambda origin, target: Decimal(1)
+    result = money.convert_to(Currency.EUR, exchange)
+
+    assert result == money
+```
 
 ---
 
