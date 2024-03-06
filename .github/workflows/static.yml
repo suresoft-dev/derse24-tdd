@@ -29,8 +29,14 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Install Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.12'
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Render slides
+        run:  python render.py
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
