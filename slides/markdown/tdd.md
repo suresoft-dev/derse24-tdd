@@ -18,13 +18,12 @@
 ---
 
 ```python
-def test__money_converted_to_same_currency__returns_same_money() -> None:
-    money = Money(100, Currency.EUR)
+def test__money_with_3_minor_units__converted_to_2_minor_units_currency__converts_with_half_round_up() -> None:
+    money = Money(1.005, Currency.JOD)
 
-    exchange = lambda origin, target: Decimal(1)
-    result = money.convert_to(Currency.EUR, exchange)
+    actual = money.convert_to(Currency.EUR, one2one_exchange)
 
-    assert result == money
+    assert actual == Money(1.01, Currency.EUR)
 ```
 
 ---
